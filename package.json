@@ -92,9 +92,9 @@
     "moment": "^2.18.1"
   },
   "scripts": {
-    "build": "NODE_ENV=production grunt build",
+    "build": "SET NODE_ENV=production grunt build",
     "start": "node server.js",
-    "test": "NODE_ENV=test grunt travis",
+    "test": "SET NODE_ENV=test grunt travis",
     "eslint": "eslint **/*.js",
     "prepublish": "npm run build",
     "codecov": "cat coverage/*/lcov.info | ./node_modules/codecov/bin/codecov"
